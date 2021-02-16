@@ -1,0 +1,97 @@
+<div class="container-fluid">
+  <div class="head">
+    <h3><span> bootstrap </span> login & registration forms</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, cupiditate ut
+      temporibus libero aspernatur labore ad. Obcaecati, quo. Earum, odit.
+    </p>
+  </div>
+  <div class="ibody row align-items-start ">
+    <div class="col left">
+      <div class="login">
+        <div class="loginhead">
+          <h3>login to our site</h3>
+          <p>enter username and password to login</p>
+        </div>
+        <div class="loginbody">
+          <form action="" #loginForm="ngForm">
+            <div class="form-group">
+              <input
+                type="text"
+                id="loginusername"
+                class="form-control"
+                placeholder="username"
+                name="loginusername"
+                ngModel
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                id="loginpassword"
+                class="form-control"
+                placeholder="password"
+                name="password"
+                ngModel
+                required
+              />
+            </div>
+            <button type="button" class="btn btn-primary">log in</button>
+          </form>
+        </div>
+      </div>
+      <div class="text">
+        <h4>... or login with</h4>
+        <button type="button" class="btn btn-primary">facebook</button>
+        <button type="button" class="btn btn-info">twitter</button>
+        <button type="button" class="btn btn-danger">G mail</button>
+      </div>
+    </div>
+    <div class="col right">
+      <div class="signup">
+        <div class="signuphead">
+          <h3>sign up now</h3>
+          <p>fill the form to get instant access</p>
+        </div>
+        <div class="signupbody">
+          <form action="" #signupform="ngForm">
+            <div class="form-group">
+              <input
+                type="text"
+                id="signupfirstname"
+                class="form-control"
+                placeholder="first name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="signuplastname"
+                class="form-control"
+                placeholder="last name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="signupemail"
+                class="form-control"
+                placeholder="email"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                id="signupaboutyou"
+                rows="3"
+                placeholder="about yourself"
+              ></textarea>
+            </div>
+          </form>
+          <button type="button" class="btn btn-primary">sign up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
